@@ -1,8 +1,11 @@
 import pandas as pd
 import json
 import requests
+import os
+from dotenv import load_dotenv
 
-API_KEY = 'AIzaSyDn54_wZ1c7iYjD1wxK9OsRnmo81xuuW6k'
+load_dotenv()
+API_KEY = os.getenv('API_KEY')
 
 with open('Input/goodreads/track_book_origins.json') as f:
 	line_content = [json.loads(line) for line in f.readlines()]
