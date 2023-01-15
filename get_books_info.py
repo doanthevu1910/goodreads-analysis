@@ -60,3 +60,5 @@ for i in range(len(df)):
 		pass
 
 	print('DONE')
+
+df.to_csv('Output/books_info.csv', index=False)
