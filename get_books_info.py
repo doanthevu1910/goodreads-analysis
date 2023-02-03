@@ -24,7 +24,7 @@ df['isEbook'] = ''
 
 for i in range(len(df)):
 
-	print(f'Generating response #{i}...', flush=True)
+	print(f'Generating response #{i}... of {len(df)}', flush=True)
 
 	title = df.book_name[i]
 	response = requests.get(f"https://www.googleapis.com/books/v1/volumes?q={title}&key={API_KEY}")
