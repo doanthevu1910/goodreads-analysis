@@ -21,14 +21,14 @@ for i in range(len(df)):
 
 	try:
 		accepteren = driver.find_element(By.XPATH, '/html/body/div[3]/div[3]/span/div/div/div/div[3]/div[1]/button[2]/div')
-		sleep(0.5)
+		# sleep(0.5)
 		accepteren.click()
 	except:
 		pass
 
 	try:
 		english = driver.find_element(By.XPATH, '/html/body/div[8]/div/div[7]/div[1]/div/div/div[2]/div/a[2]')
-		sleep(0.5)
+		# sleep(0.5)
 		english.click()
 	except:
 		pass
